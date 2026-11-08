@@ -17,85 +17,96 @@
         }
         .card {
             background: #fff;
-            padding: 40px;
+            padding: 40px 30px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            max-width: 500px;
+            max-width: 480px;
             width: 100%;
             text-align: center;
             position: relative;
-            margin-top: 80px; /* Space for the logo */
-            border-top: 2px solid #28a745;
+            margin-top: 70px;
+            border: 5px solid #28a745; /* সবুজ বর্ডারটি আরও মোটা ও স্পষ্ট করা হয়েছে */
         }
         .logo-placeholder {
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
             background-color: #fff;
             border-radius: 50%;
-            border: 5px solid #dc3545; /* Red border like the image */
+            border: 4px solid #dc3545;
             position: absolute;
-            top: -50px; /* Half way up the card */
+            top: -45px;
             left: 50%;
             transform: translateX(-50%);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
-        /* Optional: You can add an image inside if you have one, 
-           or just keep it empty like the reference */
-        /* .logo-placeholder img { width: 60%; height: auto; } */
-
+        .logo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
         .approved-text {
-            color: #28a745; /* Green color */
-            font-size: 22px;
+            color: #28a745;
+            font-size: 24px;
             font-weight: bold;
-            margin-top: 40px; /* Below logo placeholder */
+            margin-top: 35px;
             text-transform: uppercase;
+            line-height: 1.2;
         }
         .municipality-text {
-            color: #333;
+            color: #111;
             font-size: 18px;
             font-weight: bold;
-            margin-bottom: 30px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
         }
         .divider {
             border: 0;
-            border-top: 1px solid #ccc;
-            margin: 20px 0;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
+            border-top: 1.5px dotted #8b0000;
+            margin: 15px auto;
+            width: 70%;
+        }
+        .details-title {
+            color: #8b0000;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
         }
         .details-container {
             text-align: left;
-            margin-top: 30px;
+            margin-top: 15px;
             font-size: 16px;
-            line-height: 1.8;
+            line-height: 1.6;
+            padding: 0 10px;
         }
         .details-container p {
-            margin: 5px 0;
+            margin: 15px 0;
+            color: #111;
         }
         .details-container strong {
-            color: #444;
+            color: #111;
+            font-weight: bold;
         }
         .footer-text {
             color: #28a745;
-            font-size: 14px;
+            font-size: 15px;
             font-style: italic;
-            margin-top: 40px;
-            margin-bottom: 10px;
+            font-weight: bold;
+            margin-top: 35px;
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <!-- Red Circle Logo Placeholder -->
         <div class="logo-placeholder">
-            <!-- If you have the municipality logo image named 'logo.png', 
-                 uncomment the line below and adjust width/height -->
-            <!-- <img src="logo.png" alt="Municipality Logo"> -->
+            <img src="logo.png" alt="Municipality Logo">
         </div>
 
         <div class="approved-text">
@@ -108,11 +119,11 @@
         </div>
 
         <hr class="divider">
-        <div style="color: #888; font-size: 12px; margin-bottom: 10px;">---- Certificate Details ----</div>
+        <div class="details-title">----Certificate Details----</div>
 
         <div class="details-container">
-            <p><strong>Name:</strong> মোঃ শাহরিয়ার ভূইয়া</p>
-            <p><strong>Father/Husband Name:</strong> মোঃ পনির ভূইয়া</p>
+            <p><strong>Name:</strong> মোসাঃ ঝুমুর</p>
+            <p><strong>Father/Husband Name:</strong> মোঃ জহির</p>
             <p><strong>District:</strong> Narsingdi</p>
             <p><strong>Country:</strong> Bangladesh</p>
         </div>
